@@ -48,7 +48,7 @@ public static class UserInterfaceFunctions
     string projectInput = Console.ReadLine();
 
     Console.WriteLine(ProjectManager.GetProjectItemView(projectInput));
-    
+
 
     string projectTaskMenu = @"
 What would you like to do?
@@ -89,5 +89,22 @@ What would you like to do?
   public static void MarkTaskAsComplete(string projectTitle)
   {
     // TODO
+  }
+
+  public static void MarkProjectComplete()
+  {
+    Console.WriteLine("What project would you like to mark complete?");
+    string userInput = Console.ReadLine();
+
+    try 
+    {
+      ProjectManager.MarkProjectComplete(userInput);
+    }
+    catch
+    {
+      Console.WriteLine("Invalid input, try again");
+      MarkProjectComplete();
+    }
+    
   }
 }

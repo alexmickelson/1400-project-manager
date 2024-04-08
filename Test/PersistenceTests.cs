@@ -1,6 +1,8 @@
 using Data;
 using Shared;
 
+
+namespace Test;
 public class PersistenceTests
 {
   [Fact]

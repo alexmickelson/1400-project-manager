@@ -3,7 +3,8 @@
 Welcome to your project manager. Please select an option
     1. Add a Project
     2. Remove a Project
-    3. Manage Project Tasks
+    3. Mark Project Complete
+    4. Manage Project Tasks
 ";
 
 while (true)
@@ -23,6 +24,9 @@ while (true)
       UserInterfaceFunctions.RemoveProject();
       break;
     case "3":
+      UserInterfaceFunctions.MarkProjectComplete();
+      break;
+    case "4":
       UserInterfaceFunctions.ManageProjectTasksMenu();
       break;
     default:
