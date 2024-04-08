@@ -1,6 +1,6 @@
 ﻿global using ProjectTuple = (string Title, bool IsComplete);
-
 global using ProjectItemTuple = (string ProjectTitle, string Task, bool IsComplete);
+
 namespace Shared;
 
 public static class ProjectManager
@@ -25,9 +25,8 @@ public static class ProjectManager
     Projects.Add(newProject);
   }
 
-  public static void AddTaskToProject(string v1, string v2)
+  public static void AddTaskToProject(string projectTitle, string itemTask)
   {
-    throw new NotImplementedException();
   }
 
   public static string GetProjectView()

@@ -8,18 +8,19 @@ public static class Persistence
   public static void SaveProjectsToFile(List<ProjectTuple> projects)
   {
     var filePath = GetBasePath() + "projects.txt";
-
+    // TODO
   }
   public static void SaveProjectItemsToFile(List<ProjectItemTuple> projectItems)
   {
     var filePath = GetBasePath() + "projectItems.txt";
 
+    // TODO
   }
 
   public static List<ProjectTuple> LoadProjectsFromFile()
   {
     var filePath = GetBasePath() + "projects.txt";
-    
+
     // TODO
     return new();
   }
