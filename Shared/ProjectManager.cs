@@ -14,7 +14,7 @@ public static class ProjectManager
     {
       if (project.Title == title)
       {
-        throw new Exception("Cannot add project with duplicate title");
+        throw new InvalidOperationException("Cannot add project with duplicate title");
       }
     }
 

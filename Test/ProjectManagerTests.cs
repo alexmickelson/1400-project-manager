@@ -77,7 +77,7 @@ public class ProjectManagerTests
             // assert
             Assert.Fail("Should throw exception while adding duplicate project");
         }
-        catch
+        catch(InvalidOperationException)
         {
             // assert
             Assert.True(true, "If we made it here, we correctly threw an exception");
@@ -138,7 +138,7 @@ public class ProjectManagerTests
             // assert
             Assert.Fail("Should throw exception while adding duplicate project");
         }
-        catch
+        catch(InvalidOperationException)
         {
             // assert
             Assert.True(true, "If we made it here, we correctly threw an exception");
