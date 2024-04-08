@@ -36,7 +36,7 @@ public static class ProjectManager
     foreach (var project in Projects)
     {
       string checkedString = project.IsComplete ? "[X]" : "[ ]";
-      output += checkedString + " " + project.Title;
+      output += checkedString + " " + project.Title + "\n";
     }
     return output;
   }
